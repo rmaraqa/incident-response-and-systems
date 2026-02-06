@@ -7,11 +7,11 @@ My work spans digital forensic analysis, incident response, and applied systems 
 
 ## Repository Structure
 
-### 🔍 Forensic Investigations
+### Forensic Investigations
 End-to-end digital forensic casework involving timeline reconstruction, artifact correlation, and behavioral analysis across compromised systems.
 
-### ⚙️ Systems Engineering
+###  Systems Engineering
 Applied projects involving physical and infrastructure systems, including robotics and network architecture design.
 
-### 📎 Supplemental Work
+###  Supplemental Work
 Additional cybersecurity projects demonstrating technical breadth.
