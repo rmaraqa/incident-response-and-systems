@@ -11,8 +11,7 @@ My work spans digital forensic analysis, incident response, and applied systems 
 End-to-end digital forensic casework involving timeline reconstruction, artifact correlation, and behavioral analysis across compromised systems.
 
 ###  Systems Engineering
-Applied projects involving physical and infrastructur![DSCF0025](https://github.com/user-attachments/assets/a19efde3-b9ab-4810-b08e-d4e7d37c8253)
-e systems, including robotics and network architecture design.
+Applied projects involving physical and infrastructure systems, including robotics and network architecture design.
 
 ###  Supplemental Work
 Additional cybersecurity projects demonstrating technical breadth.
