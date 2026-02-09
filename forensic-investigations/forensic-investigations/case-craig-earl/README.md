@@ -1,17 +1,17 @@
-## Case Overview
+Case Overview
 
 This case involved a multi-device digital forensic investigation centered on determining the origin and movement of illicit material across two personal computers and a USB device.
 
 The investigation required correlating artifacts across systems to distinguish between direct user activity and third-party remote access.
 
-## Investigative Focus
+Investigative Focus
 
 - Cross-system timeline reconstruction
 - USB device analysis and partition recovery
 - Identification of remote access tooling and persistence
 - Correlation of file metadata with user activity and external control
 
-## Approach
+#Approach
 
 The investigation followed a structured methodology:
 - Validation of forensic images and integrity via hashing
