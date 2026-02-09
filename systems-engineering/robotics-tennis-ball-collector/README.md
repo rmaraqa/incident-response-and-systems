@@ -7,7 +7,16 @@ The goal of our project is to create a turtlebot that collects tennis balls afte
 By the end of our project, we were able to make the robot collect all the tennis balls using our algorithm and placing them in a basket, to be collected before the start of the next round of padel. The main components of our project were the use of a RealSense camera to create a god mode effect in which it created a grid that pointed out the location of all the tennis balls and the location of the turtlebot in a 2D array. This is useful in getting our turtlebot to navigate to the first ball in our algorithm as that is the most important calculation of the algorithm. The camera is set up at a high angle above our environment and detecs the tennis balls and turtlebot. This god mode feature aids us in knowing the environment better than what the turtlebot can do using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
 
 
-![IMG_9474-ezgif com-video-to-gif-converter](https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/b6df1e1d-ba0d-4fb9-a4ea-971eb5059182)
+https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
+
+
+https://github.com/user-attachments/assets/6bda20ee-a9af-4789-b631-4bf7ff07e377
+
+
+
+
+
+
 ![IMG_9478-ezgif com-video-to-gif-converter](https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/4d701379-1d94-4d24-8be7-5e802bb4c921)
 
 
