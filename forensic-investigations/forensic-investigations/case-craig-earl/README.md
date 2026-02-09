@@ -20,17 +20,15 @@ The investigation followed a structured methodology:
 - Correlation of email communications with system-level events
 - Timeline synthesis to model system behavior over time
 
-## Key Findings (High Level)
+## Key Findings
 
 - Evidence of a USB-delivered executable masquerading as a system update
 - Establishment of remote access sessions following execution
 - Consistent file hashes across multiple devices
-- Temporal discrepancies between file creation and modification events indicating external interaction
 
 ## Skills Demonstrated
 
 - Multi-source artifact correlation
 - Timeline-driven forensic reasoning
 - Remote access and persistence analysis
-- Evidence-based attribution under ambiguity
 
