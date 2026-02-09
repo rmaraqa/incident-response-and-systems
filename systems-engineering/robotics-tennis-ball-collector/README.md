@@ -12,15 +12,6 @@ https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
 
 https://github.com/user-attachments/assets/6bda20ee-a9af-4789-b631-4bf7ff07e377
 
-
-
-
-
-
-![IMG_9478-ezgif com-video-to-gif-converter](https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/4d701379-1d94-4d24-8be7-5e802bb4c921)
-
-
-
 The other main component of the project (which will be expanded on in the next section) is our algorithm. To explain briefly, our algorithm detects the tennis ball nearest to the diagonal from the turtlebot to the basket collecting the tennis balls and collects the tennis ball closest to that line. Once it drops that ball off, we implement a greedy algorithm which collects the nearest tennis ball to the turtlebot (whose location is now at the basket) and then goes to the tennis ball, picks it up, then goes back, and repeats this until all tennis balls are removed. 
 
 The combination of these two components helped us implement the algorithm that we argue is the most efficient by each controlling one aspect of our alogrithm. Combined, these two components enables us to use a different method of collecting the balls between the first ball and the rest of them.
@@ -36,7 +27,8 @@ The algorithm can be divided into two main phases:
    - The robot identifies its initial position and calculates the ball closest to the diagonal line from its starting position to the basket.
    - This phase is implemented in the `go_to_first_ball` method of the `perception` class, which uses a combination of grid-based positioning and vision processing.
    -
-   - <img width="741" alt="output" src="https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/bf7d8c91-2768-4a84-a534-faed70986f83">
+   - <img width="955" height="476" alt="3" src="https://github.com/user-attachments/assets/3f07be3f-9ba3-418b-bd11-038acbac20e8" />
+
 
 
 2. **Subsequent Ball Collection**:
