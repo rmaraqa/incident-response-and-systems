@@ -1,7 +1,6 @@
 Case Overview
 
 This case involved a corporate digital forensic investigation into alleged copyright infringement within an enterprise environment.
-
 The investigation focused on determining whether an employee violated company policy by using peer-to-peer file sharing software within a virtualized system.
 
  Investigative Focus
