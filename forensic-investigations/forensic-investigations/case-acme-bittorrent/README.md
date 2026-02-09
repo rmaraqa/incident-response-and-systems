@@ -1,7 +1,7 @@
 Case Overview
 
 This case involved a corporate digital forensic investigation into alleged copyright infringement within an enterprise environment.
-The investigation focused on determining whether an employee violated company policy by using peer-to-peer file sharing software within a virtualized system.
+The investigation focused on whether an employee violated company policy by using peer-to-peer file-sharing software on a virtualized system.
 
  Investigative Focus
 
@@ -30,4 +30,3 @@ Skills Demonstrated
 - Enterprise forensic analysis
 - Log and application artifact correlation
 - Policy-focused investigative reasoning
-- Clear attribution under competing explanations
