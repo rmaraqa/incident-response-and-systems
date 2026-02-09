@@ -1,6 +1,6 @@
 Case Overview
 
-This case involved a multi-device digital forensic investigation centered on determining the origin and movement of illicit material across two personal computers and a USB device.The investigation required correlating artifacts across systems to distinguish between direct user activity and third-party remote access.
+This case involved a multi-device digital forensic investigation centered on determining the origin and movement of illicit material across two personal computers and a USB device. The investigation required correlating artifacts across systems to distinguish between direct user activity and third-party remote access.
 
 Investigative Focus
 
@@ -29,4 +29,3 @@ Skills Demonstrated
 - Multi-source artifact correlation
 - Timeline-driven forensic reasoning
 - Remote access and persistence analysis
-
