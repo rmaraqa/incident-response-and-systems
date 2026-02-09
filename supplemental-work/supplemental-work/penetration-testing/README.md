@@ -1,6 +1,6 @@
 Project Overview
 
-This project involved a structured penetration testing assessment conducted in a controlled environment to evaluate the security posture of multiple vulnerable systems.The goal was to identify exploitable weaknesses, demonstrate potential impact, and propose mitigations from a defender’s perspective.
+This project involved a structured penetration testing assessment conducted in a controlled environment to evaluate the security posture of multiple vulnerable systems. The goal was to identify exploitable weaknesses, demonstrate potential impact, and propose mitigations from a defender's perspective.
 
 Assessment Scope
 
@@ -25,5 +25,4 @@ Key Skills Demonstrated
 - Vulnerability analysis and exploitation
 - Privilege escalation reasoning
 - Risk-focused security reporting
-- Translation of technical findings into actionable mitigations
-
+- Translation of technical findings into prevention tactics
