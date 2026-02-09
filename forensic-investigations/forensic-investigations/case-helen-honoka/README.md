@@ -1,17 +1,15 @@
-## Case Overview
+Case Overview
 
-This case involved an insider threat investigation focused on determining whether a trusted employee intentionally accessed and attempted to exfiltrate sensitive information without authorization.
+This case involved an insider threat investigation focused on determining whether a trusted employee intentionally accessed and attempted to exfiltrate sensitive information without authorization.The investigation required reconstructing user intent and behavior through correlated technical artifacts rather than relying on a single indicator of compromise.
 
-The investigation required reconstructing user intent and behavior through correlated technical artifacts rather than relying on a single indicator of compromise.
-
-## Investigative Focus
+Investigative Focus
 
 - Insider threat detection and attribution
 - Timeline reconstruction of user actions across devices
 - Correlation of access patterns, file activity, and communications
 - Differentiating benign user behavior from malicious intent
 
-## Approach
+Approach
 
 The investigation followed a structured, evidence-driven methodology:
 - Identification and validation of relevant forensic artifacts
@@ -19,14 +17,14 @@ The investigation followed a structured, evidence-driven methodology:
 - Timeline synthesis to model user behavior over time
 - Evaluation of technical evidence within organizational and contextual constraints
 
-## Key Findings (High Level)
+Key Findings
 
 - Repeated access to restricted data outside of normal workflow patterns
 - Artifact consistency supporting intentional rather than accidental behavior
 - Temporal alignment between user actions and attempted data movement
 - Absence of system-level compromise indicating insider-driven activity
 
-## Skills Demonstrated
+Skills Demonstrated
 
 - Insider threat analysis
 - Behavioral modeling from forensic artifacts
