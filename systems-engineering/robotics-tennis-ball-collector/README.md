@@ -2,9 +2,9 @@
 
 ## Project Description
 
-The goal of our project is to create a turtlebot that collects tennis balls after a padel match in the most efficient manner. This is interesting because before even starting on the project, we had to calculate and test to decide which algorithm was the most efficient and collected the most balls covering the least distance, as since the speed is uniform, distance was directly proportional to time, meaning that as the distance covered increased, the time taken increased.
+The goal of our project is to create a turtlebot that collects tennis balls after a padel match as efficiently as possible. This is interesting because before even starting on the project, we had to calculate and test to decide which algorithm was the most efficient and collected the most balls covering the least distance, as since the speed is uniform, distance was directly proportional to time, meaning that as the distance covered increased, the time taken increased.
 
-By the end of our project, we were able to make the robot collect all the tennis balls using our algorithm and placing them in a basket, to be collected before the start of the next round of padel. The main components of our project were the use of a RealSense camera to create a god mode effect in which it created a grid that pointed out the location of all the tennis balls and the location of the turtlebot in a 2D array. This is useful in getting our turtlebot to navigate to the first ball in our algorithm as that is the most important calculation of the algorithm. The camera is set up at a high angle above our environment and detecs the tennis balls and turtlebot. This god mode feature aids us in knowing the environment better than what the turtlebot can do using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
+By the end of our project, we were able to have the robot collect all the tennis balls using our algorithm and place them in a basket for collection before the start of the next round of padel. The main components of our project were the use of a RealSense camera to create a god mode effect, which produced a grid that indicated the locations of all the tennis balls and the turtlebot in a 2D array. This is useful for getting our turtlebot to navigate to the first ball in our algorithm, as that is the most important calculation. The camera is set up at a high angle above our environment and detects the tennis balls and the turtlebot. This god mode feature helps us better understand the environment than the turtlebot can using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
 
 
 https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
@@ -12,15 +12,15 @@ https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
 
 https://github.com/user-attachments/assets/6bda20ee-a9af-4789-b631-4bf7ff07e377
 
-The other main component of the project (which will be expanded on in the next section) is our algorithm. To explain briefly, our algorithm detects the tennis ball nearest to the diagonal from the turtlebot to the basket collecting the tennis balls and collects the tennis ball closest to that line. Once it drops that ball off, we implement a greedy algorithm which collects the nearest tennis ball to the turtlebot (whose location is now at the basket) and then goes to the tennis ball, picks it up, then goes back, and repeats this until all tennis balls are removed. 
+The other main component of the project (which will be expanded on in the next section) is our algorithm. Briefly, the algorithm detects the tennis ball nearest the diagonal from the turtlebot to the basket, then collects the tennis balls and the ball closest to that line. Once it drops the ball off, we implement a greedy algorithm that collects the nearest tennis ball to the turtlebot (now at the basket), picks it up, returns to the basket, and repeats this until all tennis balls are removed. 
 
-The combination of these two components helped us implement the algorithm that we argue is the most efficient by each controlling one aspect of our alogrithm. Combined, these two components enables us to use a different method of collecting the balls between the first ball and the rest of them.
+The combination of these two components helped us implement the algorithm that we argue is the most efficient, by each controlling one aspect of our algorithm. Together, these two components enable us to use a different method for collecting the balls between the first ball and the rest.
 
 ## System Architecture
 
 ### Robotics Algorithm
 
-The primary goal of our project is to efficiently collect tennis balls after a padel match using a TurtleBot equipped with a RealSense camera and LiDAR. The algorithm is designed to minimize the distance traveled by the robot, thereby reducing the time taken to collect all the balls. 
+The primary goal of our project is to efficiently collect tennis balls after a padel match using a TurtleBot equipped with a RealSense camera and LiDAR. The algorithm is designed to minimize the distance the robot travels, thereby reducing the time required to collect all the balls. 
 
 The algorithm can be divided into two main phases:
 1. **First Ball Collection**: 
@@ -47,7 +47,8 @@ The algorithm can be divided into two main phases:
    - Implemented in the `Camera.py` script, this component uses the RealSense camera to create a grid representation of the environment.
    - The `create_environment_grid` function processes depth and color images to identify walls, floors, balls, and robots.
    - The `publish_grid` function publishes the grid data to a ROS topic for use by the `perception` node.
-   - <img width="1056" alt="GRID" src="https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/d597ce04-5524-4591-8a63-0989a4731411">
+![4](https://github.com/user-attachments/assets/3e0bedd5-a86f-4b08-b6db-c7ddad29f64c)
+   
 
 
 3. **ROS Communication**:
@@ -57,7 +58,8 @@ The algorithm can be divided into two main phases:
 
 ## ROS Node Diagram
 
-<img width="600" alt="Screenshot 2024-05-23 at 12 38 45 PM" src="https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/91807696/189a504a-ae68-4117-be30-e896fb8acc3b">
+![5](https://github.com/user-attachments/assets/28bde40e-1cc9-4ba8-b69e-08f1fcefbf9b)
+
 
 - `Camera.py` node:
   - Publishes to `grid_topic`.
@@ -91,24 +93,26 @@ roslaunch final_project_rm action.launch
 
 ## Challenges
 
-One of the main challenges we faced was accurately detecting and differentiating between tennis balls and other objects in the environment. This was initially difficult due to varying lighting conditions and the similarity in color between the balls and some parts of the environment. We overcame this by fine-tuning our HSV color thresholds and implementing additional checks using depth data from the RealSense camera to improve accuracy. However, despite making these changes, we still faced some difficulties with the color and so we bought purple tennis balls to ensure better accuracy.
+One of the main challenges we faced was accurately detecting and distinguishing tennis balls from other objects in the environment. This was initially difficult due to varying lighting conditions and the similarity in color between the balls and some parts of the environment. We overcame this by fine-tuning our HSV color thresholds and implementing additional checks using depth data from the RealSense camera to improve accuracy. Despite making these changes, we still had some color issues, so we bought purple tennis balls to improve accuracy.
 
-<img width="552" alt="Screenshot 2024-05-16 at 12 51 20 PM" src="https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/dde6558f-e238-4835-9eac-8dddd7c260b4">
+![6](https://github.com/user-attachments/assets/1143a1a4-0d12-44ec-80c0-0ce7d232220f)
 
-Another challenge was learning to work with Realsense as it wasn't something we had learned through the quarter but rather we learned it using Youtube videos and the TA's help to set it up and get it working. Oftentimes it was very buggy and the laptop we had to use for the camera wouldn't work but it took trial and error to get it working and also going the second CSIL opens to avoid latency issues.
 
-<img width="979" alt="Screenshot 2024-05-23 at 4 00 38 PM" src="https://github.com/Intro-Robotics-UChicago-Spring-2024/final_project_rm/assets/114775053/373b11a2-0c48-410b-99f0-da5e9c2234bb">
+Another challenge was learning to work with Realsense, as it wasn't something we had learned through the quarter; instead, we learned it from YouTube videos and the TA's help setting it up and getting it working. Oftentimes, it was very buggy, and the laptop we had to use for the camera wouldn't work. It took trial and error to get it working, and we also went to the second CSIL opening to avoid latency issues.
+
+![7](https://github.com/user-attachments/assets/72cb7afa-eff7-4b76-a8f1-ffbcff16d461)
+
 
 
 ## Future Work
 
-Given more time, we would improve our implementation by integrating a more sophisticated SLAM (Simultaneous Localization and Mapping) algorithm to enhance the robot's navigation capabilities. Additionally, we would refine the grid-based environment mapping to dynamically update the robot's position and detected objects in real-time, allowing for more adaptive and efficient path planning. Another improvement would be thinking of a way to collect multiple balls before heading to the basket as that would create the window of opportunity for greater and more fficient algorithms that would collect the balls in even less time. 
+Given more time, we would improve our implementation by integrating a more sophisticated SLAM (Simultaneous Localization and Mapping) algorithm to enhance the robot's navigation capabilities. Additionally, we would refine the grid-based environment mapping to dynamically update the robot's position and detected objects in real time, enabling more adaptive and efficient path planning. Another improvement would be to find a way to collect multiple balls before heading to the basket, as this would create a window of opportunity for more efficient algorithms to collect them in even less time. 
 
 ## Takeaways
 
 - **Effective Team Collaboration**:
-  - Working in pairs taught us the importance of clear communication and task delegation. By dividing the project into distinct components (e.g., perception, navigation, realsense, and ROS communication), we were able to work more efficiently and integrate our work seamlessly.
+  - Working in pairs taught us the importance of clear communication and task delegation. By dividing the project into distinct components (e.g., perception, navigation, RealSense, and ROS communication), we were able to work more efficiently and integrate our work seamlessly.
 - **Robust Sensor Integration**:
   - Integrating multiple sensors (camera and LiDAR) significantly improved the robot's perception and decision-making capabilities. This experience highlighted the importance of sensor fusion in robotics to enhance accuracy and reliability in real-world applications.
 - **Future in Robotics**:
-  - Expanding on the last point, this project has shown us that robotics has beautiful real-world application that aim to increase the efficiency of activities and completing tasks with more accuracy. All the groups are completing very interesting projects that I could see myself using, whether to make my life easier or just for entertainment purposes
+  - Expanding on the last point, this project has shown us that robotics has beautiful real-world applications that aim to increase the efficiency of activities and complete tasks with more accuracy. All the groups are completing very interesting projects that I could see myself using, whether to make my life easier or just for entertainment purposes
