@@ -11,7 +11,7 @@ Investigative Focus
 - Identification of remote access tooling and persistence
 - Correlation of file metadata with user activity and external control
 
-#Approach
+Approach
 
 The investigation followed a structured methodology:
 - Validation of forensic images and integrity via hashing
@@ -20,13 +20,13 @@ The investigation followed a structured methodology:
 - Correlation of email communications with system-level events
 - Timeline synthesis to model system behavior over time
 
-## Key Findings
+Key Findings
 
 - Evidence of a USB-delivered executable masquerading as a system update
 - Establishment of remote access sessions following execution
 - Consistent file hashes across multiple devices
 
-## Skills Demonstrated
+Skills Demonstrated
 
 - Multi-source artifact correlation
 - Timeline-driven forensic reasoning
