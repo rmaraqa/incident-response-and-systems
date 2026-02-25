@@ -1,6 +1,6 @@
 ### Secure File Sharing & Network Architecture Design
 
-This project presents a full end-to-end network architecture designed for a growing boutique fitness studio, with an emphasis on security, scalability, and operational reliability. The system models a real-world small enterprise environment that integrates staff operations, point-of-sale systems, IoT-enabled equipment, guest access, surveillance infrastructure, and cloud-based services into a segmented and secure network design.
+This project presents a network architecture for a growing boutique fitness studio, emphasizing security, scalability, and operational reliability. The system models a hypothetical small enterprise environment that integrates staff operations, point-of-sale systems, IoT-enabled equipment, guest access, surveillance infrastructure, and cloud-based services into a segmented and secure network design.
 
 ## Problem Context
 The business required:
@@ -19,7 +19,6 @@ The architecture uses a layered enterprise-style design, including:
 Cloud infrastructure was designed using AWS (Lightsail, S3, Glacier, Route 53), with integrated security controls including encryption, IAM policies, and DDoS protection.
 
 ## Security & Reliability
-Security was treated as a core system constraint rather than an afterthought:
 - PCI-aware POS isolation
 - Strict inter-VLAN access controls
 - Encrypted VPN access for remote administration
@@ -33,4 +32,4 @@ The design was implemented and validated using Cisco Packet Tracer, including:
 - Connectivity and isolation testing across network segments
 
 ## Key Takeaway
-This project emphasizes systems-level thinking: translating business requirements into a secure, scalable technical architecture while balancing cost, performance, and operational risk.
+This project emphasizes systems-level thinking: translating business requirements into secure measures and scalable technical architecture while accounting for cost, performance, and operational risk.
