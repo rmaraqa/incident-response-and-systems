@@ -1,9 +1,9 @@
 # incident-response-and-systems
 # Digital Forensics & Systems Engineering Portfolio
 
-This repository contains selected forensic investigations and systems engineering projects focused on reconstructing behavior, modeling complex environments, and supporting decision-making under uncertainty.
+This repository contains a variety of my forensic investigations and systems engineering projects that focus on reconstructing behavior, modeling complex environments, and supporting decision-making.
 
-My work spans digital forensic analysis, incident response, and applied systems engineering, with an emphasis on turning fragmented data into structured models that enable confident conclusions and action.
+My work spans digital forensics, incident response, and applied systems engineering, with a focus on transforming fragmented data into structured models that yield tangible evidence for each case.
 
 ## Repository Structure
 
