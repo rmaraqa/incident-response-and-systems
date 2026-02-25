@@ -13,6 +13,6 @@ End-to-end digital forensic casework involving timeline reconstruction, artifact
 ###  Systems Engineering
 Applied projects involving physical and infrastructure systems, including robotics and network architecture design.
 
-### Supplemental Work
+### Penetration Testing
 
-This section contains additional cybersecurity work that complements the primary forensic investigations and systems engineering projects in this repository. This section includes a controlled penetration testing assessment that demonstrates offensive security fundamentals and risk-focused reporting.
+This section contains additional cybersecurity work that complements the primary forensic investigations. This section includes a controlled penetration testing assessment that shows offensive security fundamentals risk reporting.
