@@ -3,7 +3,7 @@
 This case involved a corporate digital forensic investigation of copyright infringement within an enterprise environment.
 The investigation was conducted to determine if an employee violated company policy by using peer-to-peer file-sharing software on a virtualized system.
 
-### Investigative Focus
+## Investigative Focus
 
 - Analysis of virtual machine environments
 - BitTorrent client and log analysis
@@ -11,7 +11,7 @@ The investigation was conducted to determine if an employee violated company pol
 - Finding legitimate and illegitimate uses of file sharing
 
 
-### Approach
+## Approach
 
 Methodology:
 - Validation of forensic images and integrity checks
@@ -19,14 +19,14 @@ Methodology:
 - Correlation of torrent metadata with downloaded content via hash analysis
 - Timeline reconstruction of user behavior across applications and systems
 
-### Key Findings
+## Key Findings
 
 - Multiple BitTorrent clients were installed and actively used
 - Evidence of torrent activity extending beyond legitimate software downloads
 - Artifact consistency supporting intentional use of peer-to-peer networks
 - Attempts to hide activity through torrent removal and config settings
 
-### Skills Demonstrated
+## Skills Demonstrated
 
 - Enterprise forensic analysis
 - Log and application artifact correlation
