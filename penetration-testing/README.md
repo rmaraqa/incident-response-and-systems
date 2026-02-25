@@ -17,8 +17,6 @@ The report uses the following penetration testing methodology:
 - Controlled exploitation to validate possible real-world risk
 - Documentation of impact and remediation recommendations
 
-All testing was conducted ethically within an isolated lab environment.
-
 ## Key Skills Demonstrated
 
 - Offensive security fundamentals
