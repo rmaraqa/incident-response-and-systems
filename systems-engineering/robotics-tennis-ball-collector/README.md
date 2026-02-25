@@ -1,10 +1,10 @@
-# final_project_rm
+# Tennis Ball Collector
 
 ## Project Description
 
-The goal of this project was to create a  turtlebot that collects tennis balls after a tennis match as efficiently as possible. This is interesting because before even starting on the project, we had to calculate and test to decide which algorithm was the most efficient and collected the most balls covering the least distance, as since the speed is uniform, distance was directly proportional to time, meaning that as the distance covered increased, the time taken increased.
+The goal of this project was to create a  turtlebot that collects tennis balls after a tennis match as efficiently as possible. This project required calculating and testing to determine which algorithm was most efficient: the one that collected the most balls over the least distance. Since the speed is uniform, distance is directly proportional to time, meaning that as the distance covered increases, the time taken increases.
 
-By the end of our project, we had the robot collect all the tennis balls using our algorithm and place them in a basket for collection before the start of the next round of padel. The main components of our project were the use of a RealSense camera to create a god mode effect, producing a 2D grid indicating the locations of all the tennis balls and the turtlebot. This is useful for getting our turtlebot to navigate to the first ball in our algorithm, as that is the most important calculation. The camera is set up at a high angle above our environment and detects the tennis balls and the turtlebot. This god mode feature helps us better understand the environment than the turtlebot can using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
+The robot collects all the tennis balls using the algorithm and places them in a basket for collection before the start of the next round of padel. The RealSense camera is used to create a god mode effect, producing a 2D grid indicating the locations of all the tennis balls and the turtlebot. This is useful for getting our turtlebot to navigate to the first ball in our algorithm, as that is the most important calculation. The camera is set up at a high angle above our environment and detects the tennis balls and the turtlebot. This god mode feature helps better understand the environment than the turtlebot can using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
 
 
 https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
@@ -12,15 +12,15 @@ https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
 
 https://github.com/user-attachments/assets/6bda20ee-a9af-4789-b631-4bf7ff07e377
 
-The other main component of the project (which will be expanded on in the next section) is our algorithm. Briefly, the algorithm detects the tennis ball closest to the diagonal line between the turtlebot and the basket, then collects the tennis balls and the ball closest to that line. Once it drops the ball off, we implement a greedy algorithm that collects the nearest tennis ball to the turtlebot (now at the basket), picks it up, returns to the basket, and repeats this until all tennis balls are removed. 
+The other main component of the project is the algorithm. Briefly, the algorithm detects the tennis ball closest to the diagonal line between the turtlebot and the basket, then collects the tennis balls and the ball closest to that line. Once it drops the ball off, it implements a greedy algorithm that collects the nearest tennis ball to the turtlebot (now at the basket), picks it up, returns to the basket, and repeats this until all tennis balls are removed. 
 
-The combination of these two components helped us implement the algorithm we argue is the most efficient, each controlling one aspect of it. Together, these two components enable us to use a different method for collecting the balls between the first ball and the rest.
+The combination of these two components helped make the algorithm efficient, each controlling one aspect. Together, these two components enable two different methods for collecting the balls between the first ball and the remaining balls.
 
 ## System Architecture
 
 ### Robotics Algorithm
 
-The primary goal of our project is to efficiently collect tennis balls after a padel match using a TurtleBot equipped with a RealSense camera and LiDAR. The algorithm is designed to minimize the distance the robot travels, thereby reducing the time required to collect all the balls. 
+The primary goal t is to efficiently collect tennis balls after a tennis match using a TurtleBot equipped with a RealSense camera and LiDAR. The algorithm is designed to minimize the distance the robot travels, thereby reducing the time required to collect all the balls. 
 
 The algorithm can be divided into two main phases:
 1. **First Ball Collection**: 
@@ -41,7 +41,6 @@ The algorithm can be divided into two main phases:
    - The `perception` class is responsible for processing camera and LiDAR data to identify and locate tennis balls.
    - Key functions include `image_callback`, `scan_callback`, and `find_robot_position`.
    - The robot's movements are controlled through methods like `go_to_first_ball`, `go_to`, `pick_object`, and `drop_object`.
-   - 
 
 2. **Environment Grid Creation**:
    - Implemented in the `Camera.py` script, this component uses the RealSense camera to create a grid representation of the environment.
@@ -90,4 +89,3 @@ $ bringup_cam
 
 Terminal 5:
 roslaunch final_project_rm action.launch
-
