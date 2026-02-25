@@ -91,28 +91,3 @@ $ bringup_cam
 Terminal 5:
 roslaunch final_project_rm action.launch
 
-## Challenges
-
-One of the main challenges we faced was accurately detecting and distinguishing tennis balls from other objects in the environment. This was initially difficult due to varying lighting conditions and the similarity in color between the balls and some parts of the environment. We overcame this by fine-tuning our HSV color thresholds and implementing additional checks using depth data from the RealSense camera to improve accuracy. Despite making these changes, we still had some color issues, so we bought purple tennis balls to improve accuracy.
-
-![6](https://github.com/user-attachments/assets/1143a1a4-0d12-44ec-80c0-0ce7d232220f)
-
-
-Another challenge was learning to work with Realsense, as it wasn't something we had learned through the quarter; instead, we learned it from YouTube videos and the TA's help setting it up and getting it working. Oftentimes, it was very buggy, and the laptop we had to use for the camera wouldn't work. It took trial and error to get it working, and we also went to the second CSIL opening to avoid latency issues.
-
-![7](https://github.com/user-attachments/assets/72cb7afa-eff7-4b76-a8f1-ffbcff16d461)
-
-
-
-## Future Work
-
-Given more time, we would improve our implementation by integrating a more sophisticated SLAM (Simultaneous Localization and Mapping) algorithm to enhance the robot's navigation capabilities. Additionally, we would refine the grid-based environment mapping to dynamically update the robot's position and detected objects in real time, enabling more adaptive and efficient path planning. Another improvement would be to find a way to collect multiple balls before heading to the basket, as this would create a window of opportunity for more efficient algorithms to collect them in even less time. 
-
-## Takeaways
-
-- **Effective Team Collaboration**:
-  - Working in pairs taught us the importance of clear communication and task delegation. By dividing the project into distinct components (e.g., perception, navigation, RealSense, and ROS communication), we were able to work more efficiently and integrate our work seamlessly.
-- **Robust Sensor Integration**:
-  - Integrating multiple sensors (camera and LiDAR) significantly improved the robot's perception and decision-making capabilities. This experience highlighted the importance of sensor fusion in robotics to enhance accuracy and reliability in real-world applications.
-- **Future in Robotics**:
-  - Expanding on the last point, this project has shown us that robotics has beautiful real-world applications that aim to increase the efficiency of activities and complete tasks with more accuracy. All the groups are completing very interesting projects that I could see myself using, whether to make my life easier or just for entertainment purposes
