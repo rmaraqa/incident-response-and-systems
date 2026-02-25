@@ -2,9 +2,9 @@
 
 ## Project Description
 
-The goal of our project is to create a turtlebot that collects tennis balls after a padel match as efficiently as possible. This is interesting because before even starting on the project, we had to calculate and test to decide which algorithm was the most efficient and collected the most balls covering the least distance, as since the speed is uniform, distance was directly proportional to time, meaning that as the distance covered increased, the time taken increased.
+The goal of this project was to create a  turtlebot that collects tennis balls after a tennis match as efficiently as possible. This is interesting because before even starting on the project, we had to calculate and test to decide which algorithm was the most efficient and collected the most balls covering the least distance, as since the speed is uniform, distance was directly proportional to time, meaning that as the distance covered increased, the time taken increased.
 
-By the end of our project, we were able to have the robot collect all the tennis balls using our algorithm and place them in a basket for collection before the start of the next round of padel. The main components of our project were the use of a RealSense camera to create a god mode effect, which produced a grid that indicated the locations of all the tennis balls and the turtlebot in a 2D array. This is useful for getting our turtlebot to navigate to the first ball in our algorithm, as that is the most important calculation. The camera is set up at a high angle above our environment and detects the tennis balls and the turtlebot. This god mode feature helps us better understand the environment than the turtlebot can using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
+By the end of our project, we had the robot collect all the tennis balls using our algorithm and place them in a basket for collection before the start of the next round of padel. The main components of our project were the use of a RealSense camera to create a god mode effect, producing a 2D grid indicating the locations of all the tennis balls and the turtlebot. This is useful for getting our turtlebot to navigate to the first ball in our algorithm, as that is the most important calculation. The camera is set up at a high angle above our environment and detects the tennis balls and the turtlebot. This god mode feature helps us better understand the environment than the turtlebot can using its camera or LiDAR sensors. This method ensured maximum accuracy and minimized the room for error. 
 
 
 https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
@@ -12,9 +12,9 @@ https://github.com/user-attachments/assets/bdff3d59-bc11-47f7-b312-eabc5037e4ce
 
 https://github.com/user-attachments/assets/6bda20ee-a9af-4789-b631-4bf7ff07e377
 
-The other main component of the project (which will be expanded on in the next section) is our algorithm. Briefly, the algorithm detects the tennis ball nearest the diagonal from the turtlebot to the basket, then collects the tennis balls and the ball closest to that line. Once it drops the ball off, we implement a greedy algorithm that collects the nearest tennis ball to the turtlebot (now at the basket), picks it up, returns to the basket, and repeats this until all tennis balls are removed. 
+The other main component of the project (which will be expanded on in the next section) is our algorithm. Briefly, the algorithm detects the tennis ball closest to the diagonal line between the turtlebot and the basket, then collects the tennis balls and the ball closest to that line. Once it drops the ball off, we implement a greedy algorithm that collects the nearest tennis ball to the turtlebot (now at the basket), picks it up, returns to the basket, and repeats this until all tennis balls are removed. 
 
-The combination of these two components helped us implement the algorithm that we argue is the most efficient, by each controlling one aspect of our algorithm. Together, these two components enable us to use a different method for collecting the balls between the first ball and the rest.
+The combination of these two components helped us implement the algorithm we argue is the most efficient, each controlling one aspect of it. Together, these two components enable us to use a different method for collecting the balls between the first ball and the rest.
 
 ## System Architecture
 
